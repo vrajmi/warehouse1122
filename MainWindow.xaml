@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="Raktárkezelő" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label Content="Válassz egy lehetőség közül:" HorizontalAlignment="Center" Margin="0,73,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Button x:Name="NewProduct" Content="Új termék felvétele" HorizontalAlignment="Left" Margin="16,241,0,0" VerticalAlignment="Top" Height="39" Width="150" FontSize="16" Click="NewProduct_Click"/>
+        <Button x:Name="SupplierButton" Content="Beszállító felvétele/módosítása" HorizontalAlignment="Left" Margin="181,241,0,0" VerticalAlignment="Top" Height="39" Width="235" FontSize="16" Click="SupplierButton_Click"/>
+        <Button x:Name="ProductChangeButton" Content="Termék mennyiségének és árának módosítása" HorizontalAlignment="Left" Margin="433,241,0,0" VerticalAlignment="Top" Height="39" Width="344" FontSize="16" Click="ProductChangeButton_Click"/>
+
     </Grid>
 </Window>

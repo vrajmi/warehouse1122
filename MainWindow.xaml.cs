@@ -24,7 +24,31 @@ namespace warehouse1122
         public MainWindow()
         {
             InitializeComponent();
-             
+            
+        }
+
+        private void NewProduct_Click(object sender, RoutedEventArgs e)
+        {
+            NewProductWindow newProductWindow = new NewProductWindow();
+            this.Hide();
+            newProductWindow.ShowDialog();
+            this.Show();
+        }
+
+        private void SupplierButton_Click(object sender, RoutedEventArgs e)
+        {
+            SupplierWindow supplierWindow = new SupplierWindow();
+            this.Hide();
+            supplierWindow.ShowDialog();
+            this.Show();
+        }
+
+        private void ProductChangeButton_Click(object sender, RoutedEventArgs e)
+        {
+            ProductChangeWindow productChangeWindow = new ProductChangeWindow();
+            this.Hide();
+            productChangeWindow.ShowDialog();
+            this.Show();
         }
     }
 }
